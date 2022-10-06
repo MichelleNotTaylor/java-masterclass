@@ -29,5 +29,14 @@ public class Main {
         System.out.println("long Maximum Value = " + myMaxlongValue);
         long bigLongLiteralValue = 2_147_483_647_234L;
 
+        int myTotal = (myMinIntValue/2);
+        byte myNewByteValue = (byte)(myMinByteValue/2);
+        short myNewShortValue = (short)(myMinShortValue/2);
+
+        byte myByte = 120;
+        short myShort = 2334;
+        int myInt = 250;
+        long myLong = 50000L + 10L * (myByte + myShort + myInt);
+        System.out.println("Result: " + myLong);
     }
 }
