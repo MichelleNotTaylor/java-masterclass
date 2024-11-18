@@ -13,7 +13,7 @@ public class Main {
         salariedEmployee.setName("John Doe");
 
         System.out.println("Employee Age: " + salariedEmployee.getAge());
-        salariedEmployee.collectPay();
+        System.out.println("Employee Pay: $" + salariedEmployee.collectPay());
         salariedEmployee.retire();
         System.out.println("Employee is Retired: " + salariedEmployee.isRetired());
         System.out.println("Employee End Date: " + salariedEmployee.getEndDate());

@@ -23,7 +23,12 @@ public class SalariedEmployee extends Employee {
     }
 
     public void retire() {
-        this.isRetired = true;
-        this.setEndDate(LocalDate.now());
+        isRetired = true;
+        terminate(LocalDate.now());
+    }
+
+    @Override
+    public double collectPay() {
+        return (int) annualSalary/26;
     }
 }
